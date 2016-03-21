@@ -20,19 +20,25 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tc_range.h">
+    <ClInclude Include="item_common.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="item_composite.h">
+    <ClInclude Include="attribs.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="attribs.h">
+    <ClInclude Include="doc_tags.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="doc_tags.h">
+    <ClInclude Include="item_composite.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="item_composite_to_stringlist.h">
+    <ClInclude Include="item_composite_to_stringlist.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="item_text.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tc_range.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

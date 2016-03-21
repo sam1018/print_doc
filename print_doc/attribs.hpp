@@ -1,7 +1,7 @@
 #pragma once
 
 #include <boost/property_tree/ptree.hpp>
-#include "doc_tags.h"
+#include "doc_tags.hpp"
 
 namespace items
 {

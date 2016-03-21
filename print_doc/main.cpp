@@ -1,20 +1,19 @@
 #include <iostream>
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
-#include "attribs.h"
-#include "tc_range.h"
-#include "item_composite.h"
-#include "item_composite_to_stringlist.h"
+#include "attribs.hpp"
+#include "tc_range.hpp"
+#include "item_composite.hpp"
+#include "item_composite_to_stringlist.hpp"
 
 using namespace std;
 using namespace items;
-using namespace boost::property_tree;
 
 void print_document(const ptree& tree, ostream& os)
 {
 	boost::copy(
 		item_composite(tree, attribs{}) | item_composite_to_stringlist,
-		ostream_iterator<string>(os, "\n")
+		ostream_iterator<string_type>(os, "\n")
 	);
 }
 

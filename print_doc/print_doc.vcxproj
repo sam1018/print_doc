@@ -149,11 +149,13 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="attribs.h" />
-    <ClInclude Include="doc_tags.h" />
-    <ClInclude Include="item_composite.h" />
-    <ClInclude Include="item_composite_to_stringlist.h" />
-    <ClInclude Include="tc_range.h" />
+    <ClInclude Include="attribs.hpp" />
+    <ClInclude Include="doc_tags.hpp" />
+    <ClInclude Include="item_common.hpp" />
+    <ClInclude Include="item_composite.hpp" />
+    <ClInclude Include="item_composite_to_stringlist.hpp" />
+    <ClInclude Include="item_text.hpp" />
+    <ClInclude Include="tc_range.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="cv.xml" />

@@ -7,26 +7,32 @@ namespace items { namespace detail {
 	template<typename item_composite_iter>
 	class item_composite_to_stringlist_iterator : public boost::iterator_facade<
 		item_composite_to_stringlist_iterator<item_composite_iter>,
-		std::string,
-		boost::forward_traversal_tag
+		string_type,
+		boost::forward_traversal_tag,
+		string_type
 	>
 	{
 	private:
-		item_composite_iter it;
+		item_composite_iter it_item;
 
 	public:
 		item_composite_to_stringlist_iterator(item_composite_iter _it) :
-			it(_it)
+			it_item(_it)
 		{}
 
 	private:
 		friend class boost::iterator_core_access;
 
-		void increment() {}
-		std::string& dereference() const { return std::string{}; }
+		void increment()
+		{
+		}
+		string_type dereference() const
+		{
+			return string_type(it_item->begin(), it_item->end());
+		}
 		bool equal(item_composite_to_stringlist_iterator const& other) const
 		{
-			return true;
+			return it_item == other.it_item;
 		}
 	};
 
